@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Andre",
+      "password": "commission"
+    },
+    {
+      "id": 2,
+      "username": "Neic",
+      "password": "overseer"
+    },
+    {
+      "id": 3,
+      "username": "Neilson",
+      "password": "backend"
+    },
+    {
+      "id": 4,
+      "username": "Kenji",
+      "password": "frontend"
+    },
+    {
+      "id": 5,
+      "username": "Andrew",
+      "password": "uiux"
+    },
+    {
+      "id": 6,
+      "username": "Stacey",
+      "password": "habibi"
+    },
+    {
+      "id": 7,
+      "username": "MrAss",
+      "password": "gerard"
+    },
+    {
+      "id": 8,
+      "username": "kotani",
+      "password": "kotani12112"
+    },
+    {
+      "id": 9,
+      "username": "minecraft",
+      "password": "kotani12112"
+    },
+    {
+      "id": 10,
+      "username": "ken",
+      "password": "ken"
+    }
+  ],
+  "cards": [
+    {
+      "textfield1": "",
+      "label1": "",
+      "textfield2": "",
+      "label2": "New Textfield",
+      "textfield3": "",
+      "label3": "New Textfield",
+      "id": 1
+    }
+  ],
+  "contracts": []
+}

@@ -1,0 +1,19 @@
+.custom-button {
+  width: 350px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  border: none;
+}
+
+.custom-button:hover {
+  transform: translateY(-5px);
+}
+
+.custom-button:active {
+  background-color: yellow;
+}
