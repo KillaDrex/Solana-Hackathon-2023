@@ -9,17 +9,19 @@ import { auth } from "@/firebase/clientApp";
 const Navbar = () => {
   const [user, loading, error] = useAuthState(auth);
   return (
-    <Flex bg="#222222" height="60px" padding="12px 0px">
-      <Flex align="center" ml="387px">
-        <Image src="ano.svg" />
-      </Flex>
-      <Spacer />
-      <Flex width="836px">
-        <SearchInput />
-      </Flex>
-      <Spacer />
-      <Flex mr="387px">
-        <RightContent user={user} />
+    <Flex bg="#222222" height="60px" padding="12px 0px" justify="center">
+      <Flex width={1300}>
+        <Flex align="center">
+          <Image src="ano.svg" width="100px" height="60px" />
+        </Flex>
+        <Spacer />
+        <Flex width={836}>
+          <SearchInput />
+        </Flex>
+        <Spacer />
+        <Flex mr={10}>
+          <RightContent user={user} />
+        </Flex>
       </Flex>
     </Flex>
   );

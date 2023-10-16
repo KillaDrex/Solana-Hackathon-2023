@@ -8,6 +8,8 @@ import {
   Icon,
   Flex,
   MenuDivider,
+  Text,
+  Center,
 } from "@chakra-ui/react";
 import { User, signOut } from "firebase/auth";
 import React from "react";
@@ -33,9 +35,20 @@ const UserMenu = ({ user }: Props) => {
           <Flex align="center">
             {user ? (
               <>
-                <Icon fontSize={24} mr={1} color="gray.300" as={VscAccount} />
-                <Flex>User Name</Flex>
-                <ChevronDownIcon />
+                <Flex
+                  display={{ base: "none", lg: "flex" }}
+                  fontSize="8pt"
+                  align="flex-start"
+                  gap={5}
+                  alignItems="center"
+                >
+                  <Icon fontSize={24} mr={1} color="gray.300" as={VscAccount} />
+                  {/* <Flex>User Name</Flex> */}
+                  <Text fontWeight={700} fontSize={15}>
+                    {user?.displayName || user.email?.split("@")[0]}
+                  </Text>
+                  <ChevronDownIcon />
+                </Flex>
               </>
             ) : (
               <div></div>
