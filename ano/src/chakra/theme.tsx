@@ -4,6 +4,7 @@ import "@fontsource/open-sans/700.css";
 
 import { extendTheme } from "@chakra-ui/react";
 import { Button } from "./button";
+import { menuTheme } from "./menu";
 
 export const theme = extendTheme({
   colors: {
@@ -19,10 +20,12 @@ export const theme = extendTheme({
     global: () => ({
       body: {
         bg: "white",
+        color: "#222222",
       },
     }),
   },
   components: {
     Button,
+    Menu: menuTheme,
   },
 });
